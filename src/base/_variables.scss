@@ -9,23 +9,6 @@ $medium-width:       768px;
 $large-width:        992px;
 $extra-large-width:  1200px;
 
-// Units:
-$au: auto;
-$n5: 5px;
-$n10: 10px;
-$n15: 15px;
-$n20: 20px;
-$n25: 25px;
-$n30: 30px;
-$n35: 35px;
-$n40: 40px;
-$n50: 50px;
-$n60: 60px;
-$n70: 70px;
-$n80: 80px;
-$n90: 90px;
-$n100: 100px;
-
 // Spacing
 //
 // Variables that define certain margin values to be used mostly
@@ -38,10 +21,32 @@ $n100: 100px;
 // </div>
 //
 // Styleguide Layout.spacing
-$space-xxs: 4px;
-$space-xs:  8px;
-$space-sm:  12px;
-$space-md:  16px;
-$space-lg:  32px;
-$space-xl:  48px;
-$space-xxl: 64px;
+$grid-unit: 8px;
+@function space($multiplier) {
+	@return ($grid-unit * $multiplier);
+}
+
+$space-xxs: space(1);
+$space-xs:  space(1);
+$space-sm:  space(1);
+$space-md:  space(2);
+$space-lg:  space(4);
+$space-xl:  space(6);
+$space-xxl: space(8);
+
+// Units:
+$au: auto;
+$n5: space(1);
+$n10: space(1);
+$n15: space(1);
+$n20: space(2);
+$n25: space(3);
+$n30: space(3);
+$n35: space(4);
+$n40: space(5);
+$n50: space(6);
+$n60: space(7);
+$n70: space(8);
+$n80: space(9);
+$n90: space(10);
+$n100: space(11);
