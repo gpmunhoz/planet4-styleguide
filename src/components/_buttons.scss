@@ -61,19 +61,18 @@
 
 .btn-primary,
 .wp-block-button.is-style-cta a {
-  background-color: $orange;
+  background-color: var(--btn-primary-background-color, $orange);
   color: var(--btn-primary-color, $white);
   box-shadow: 0 2px 5px rgba(0, 0, 0, .25);
 
   &:hover,
   &:focus {
-    background-color: $orange-hover;
+    background-color: var(--btn-primary-background-color-hover ,$orange-hover);
     border-color: $orange-hover;
   }
 
-  &:active,
-  &:not(:disabled):not(.disabled):active {
-    background-color: $orange-active;
+  &:active {
+    background-color: var(--btn-primary-background-color-active, $orange-active);
     border-color: $orange-active;
   }
 }

@@ -592,7 +592,8 @@ $navbar-default-height: 60px;
 
 .country-dropdown-toggle {
   cursor: pointer;
-  font-size: $font-size-sm;
+  font-size: var(--country-dropdown-toggle-font-size, $font-size-sm);
+  font-weight: var(--country-dropdown-toggle-font-weight, inherit);
   border: 0;
   color: transparentize($white, 0.2);
   background: transparent;
