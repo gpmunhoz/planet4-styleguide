@@ -64,12 +64,12 @@
 
   &:hover,
   &:focus {
-    background-color: $orange-hover;
+    background-color: var(--btn-primary-background-color-hover ,$orange-hover);
     border-color: $orange-hover;
   }
 
   &:active {
-    background-color: var(--btn-primary-background-color, $orange-active);
+    background-color: var(--btn-primary-background-color-active, $orange-active);
     border-color: $orange-active;
   }
 
