@@ -591,20 +591,23 @@ $navbar-default-height: 60px;
 }
 
 .country-dropdown-toggle {
+  --country-dropdown-toggle-- {
+    font-size:  $font-size-sm;
+    font-weight: inherit;
+    background-color: $x-dark-blue;
+    border: 0;
+    color: transparentize($white, 0.2);
+    transition: color 100ms;
+  }
   cursor: pointer;
-  font-size: var(--country-dropdown-toggle-font-size, $font-size-sm);
-  font-weight: var(--country-dropdown-toggle-font-weight, inherit);
-  border: 0;
-  color: transparentize($white, 0.2);
-  background: transparent;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  transition: color 100ms;
 
-  background-color: $x-dark-blue;
   @include large-and-up {
-    background-color: transparent;
+    --country-dropdown-toggle-large-- {
+      background-color: transparent;
+    }
   }
 
   &::after {

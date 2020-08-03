@@ -17,13 +17,17 @@ html {
 // Styleguide Style.typography.paragraphs
 p,
 li {
+  --text-- {
+    font-size: $font-size-sm;
+    line-height: 1.6rem;
+  }
   hyphens: none;
-  font-size: var(--text-size-small, $font-size-sm);
-  line-height: var(--line-height-small, 1.6rem);
 
   @include x-large-and-up {
-    font-size: var(--text-size, $font-size-md);
-    line-height: var(--line-height, 1.75rem);
+    --text-large-- {
+      font-size: $font-size-md;
+      line-height: 1.75rem;
+    }
   }
 }
 
@@ -46,31 +50,45 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--header-font, $roboto);
-  font-weight: bold;
+  --header-- {
+    font-family: $roboto;
+    font-weight: bold;
+  }
 }
 
 h1 {
-  line-height: 1.225;
-  margin-bottom: 30px;
-  font-size: $font-size-xxl;
+  --h1-- {
+    line-height: 1.225;
+  }
+  --h1-small-- {
+    margin-bottom: 30px;
+    font-size: $font-size-xxl;
+  }
 
   @include medium-and-up {
-    font-size: var(--h1-font-size, $font-size-xxxxl);
+    --h1-medium-- {
+      font-size: $font-size-xxxxl;
+    }
   }
 
   @include large-and-up {
-    margin-bottom: 48px;
+    --h1-large-- {
+      margin-bottom: 48px;
+    }
   }
 }
 
 h2 {
+  --h2-small-- {
+    font-size: $font-size-xl;
+  }
   line-height: 1.38;
   margin-bottom: 5px;
-  font-size: var(--h2-font-size, $font-size-xl);
 
   @include medium-and-up {
-    font-size: var(--h2-font-size-medium-and-up, $font-size-xxl);
+    --h2-medium-- {
+      font-size: $font-size-xxl;
+    }
   }
 
   @include x-large-and-up {

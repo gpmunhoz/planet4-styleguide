@@ -64,7 +64,9 @@
 }
 
 .page-header {
-  color: $grey-80;
+  --page-header-- {
+    color:  $grey-80;
+  }
   padding-top: $n90;
   margin-bottom: $space-md;
   position: relative;
