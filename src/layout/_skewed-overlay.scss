@@ -1,4 +1,7 @@
 .skewed-overlay {
+  --skewed-overlay-- {
+    display: block;
+  }
   pointer-events: none;
   height: 100%;
 

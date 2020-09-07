@@ -149,6 +149,9 @@
 }
 
 .page-header-title {
+  --page-header-title-- {
+    background-color: transparent;
+  }
   max-width: 80%;
   margin-bottom: 10px;
 
