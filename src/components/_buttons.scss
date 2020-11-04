@@ -29,7 +29,7 @@
   transition-property: color, background-color, border-color;
   transition-duration: 150ms;
   transition-timing-function: linear;
-  text-transform: capitalize;
+  text-transform: var(--global-button--text-transform, none);
 
   &:hover,
   &:focus,
