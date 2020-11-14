@@ -72,21 +72,21 @@ $navbar-default-height: 60px;
 .top-navigation {
   --top-nav-- {
     position: fixed;
-    margin: 0;
     max-width: none;
+    text-transform: uppercase;
+    background-color: transparentize($dark-blue, 0.2);
+    height: $menu-height-small;
+    font-family: $roboto;
+    justify-content: space-between;
+    align-items: normal;
   }
   width: 100%;
   top: 0;
   z-index: 5;
+  margin: 0;
   padding: 0;
-  text-transform: uppercase;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: normal;
-  background: var(--campaign_nav_color, transparentize($dark-blue, 0.2));
-  height: $menu-height-small;
-  font-family: $roboto;
 
   html[dir="rtl"] & {
     text-transform: lowercase;
