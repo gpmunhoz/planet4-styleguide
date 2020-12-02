@@ -155,4 +155,35 @@
 
 .form-control {
   border-radius: 4px;
+  font-family: $roboto;
+  background-color: $white;
+  border: 1px solid $grey-20;
+  resize: none;
+  color: $grey-80;
+  padding: 16px;
+  font-size: $font-size-sm;
+  height: auto;
+
+  &::placeholder {
+    color: $grey-40;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $grey-40;
+  }
+
+  &::-ms-input-placeholder {
+    color: $grey-40;
+  }
+
+  &:hover {
+    border-color: $grey-40;
+  }
+
+  &:active,
+  &:focus {
+    border-color: rgba(0, 109, 253, 0.4);
+    color: $grey-80;
+    box-shadow: none;
+  }
 }
